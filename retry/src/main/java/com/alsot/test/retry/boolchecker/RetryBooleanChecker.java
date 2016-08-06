@@ -9,8 +9,8 @@ import com.nurkiewicz.asyncretry.RetryExecutor;
 
 public class RetryBooleanChecker implements BooleanChecker {
 	
-	private BooleanChecker checker;
-	private RetryExecutor retryExecutor;
+	private final BooleanChecker checker;
+	private final RetryExecutor retryExecutor;
 	
 	/**
 	 * @param checker
